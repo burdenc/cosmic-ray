@@ -55,6 +55,9 @@ operators = [
 
     'slice_reorder ='
     'cosmic_ray.operators.slice:MutateSlice',
+
+    'mutate_assignment_operator ='
+    'cosmic_ray.operators.assignment_replacer:MutateAssign',
 ]
 
 INSTALL_REQUIRES = [
