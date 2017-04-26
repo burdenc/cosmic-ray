@@ -20,6 +20,7 @@ from cosmic_ray.operators.break_continue import (ReplaceBreakWithContinue,
 from cosmic_ray.operators.number_replacer import NumberReplacer
 from cosmic_ray.operators.slice import MutateSlice
 from cosmic_ray.operators.assignment_replacer import (MutateAssign, MutateAugAssign)
+from cosmic_ray.operators.call_reordering import MutateCall
 from cosmic_ray.mutating import MutatingCore
 
 
@@ -69,6 +70,7 @@ OPERATOR_SAMPLES = [
     (MutateSlice, '"abc"[1:2:3]'),
     (MutateAssign, 'x = 1'),
     (MutateAugAssign, 'x += 1'),
+    (MutateCall, 'print(a,b)'),
 ]
 
 

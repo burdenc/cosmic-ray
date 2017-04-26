@@ -58,6 +58,9 @@ operators = [
 
     'mutate_assignment_operator ='
     'cosmic_ray.operators.assignment_replacer:MutateAssign',
+
+    'call_args_reorder ='
+    'cosmic_ray.operators.call_reordering:MutateCall',
 ]
 
 INSTALL_REQUIRES = [
