@@ -18,6 +18,7 @@ from cosmic_ray.operators.boolean_replacer import (ReplaceTrueFalse,
 from cosmic_ray.operators.break_continue import (ReplaceBreakWithContinue,
                                                  ReplaceContinueWithBreak)
 from cosmic_ray.operators.number_replacer import NumberReplacer
+from cosmic_ray.operators.slice import MutateSlice
 from cosmic_ray.mutating import MutatingCore
 
 
@@ -62,6 +63,9 @@ OPERATOR_SAMPLES = [
     (MutateUnaryOperator, 'x = -1'),
     (MutateBinaryOperator, 'x * y'),
     (MutateBinaryOperator, 'x - y'),
+    (MutateSlice, '"abc"[1:]'),
+    (MutateSlice, '"abc"[1:2]'),
+    (MutateSlice, '"abc"[1:2:3]'),
 ]
 
 

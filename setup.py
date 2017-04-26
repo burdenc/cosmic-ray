@@ -52,6 +52,9 @@ operators = [
 
     'break_continue_replacement ='
     'cosmic_ray.operators.break_continue:ReplaceBreakWithContinue',
+
+    'slice_reorder ='
+    'cosmic_ray.operators.slice:MutateSlice',
 ]
 
 INSTALL_REQUIRES = [
