@@ -69,5 +69,20 @@ class Tests(unittest.TestCase):
             adam.use_continue(10),
             9)
 
+    def test_slice(self):
+        self.assertEqual(
+            adam.slice(),
+            'a')
+
+    def test_aug_assignment(self):
+        self.assertEqual(
+            adam.aug_assignment(),
+            6)
+
+    def test_function_args(self):
+        self.assertEqual(
+            adam.function_args(),
+            'c')
+
     def test_trigger_infinite_loop(self):
         self.assertTrue(adam.trigger_infinite_loop())

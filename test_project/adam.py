@@ -76,6 +76,22 @@ def use_continue(limit):
     return x
 
 
+def slice():
+    return "abcdefg"[0:1:2]
+
+
+def aug_assignment():
+    some_int = 5
+    some_int += 1
+    return some_int
+
+
+def function_args():
+    def _(a, b, c):
+        return c
+    return _('a', 'b', 'c')
+
+
 def trigger_infinite_loop():
     result = None
     # When `break` becomes `continue`, this should enter an infinite loop. This
